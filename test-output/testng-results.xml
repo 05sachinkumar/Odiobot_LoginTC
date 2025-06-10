@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-10T18:39:00 IST" name="LoginTC" finished-at="2025-06-10T18:39:19 IST" duration-ms="18966">
+    <groups>
+    </groups>
+    <test started-at="2025-06-10T18:39:00 IST" name="Login" finished-at="2025-06-10T18:39:19 IST" duration-ms="18966">
+      <class name="Odiobot.LoginTC.LoginTest">
+        <test-method is-config="true" signature="getLaunchUrl()[pri:0, instance:Odiobot.LoginTC.LoginTest@3cd3e762]" started-at="2025-06-10T18:39:01 IST" name="getLaunchUrl" finished-at="2025-06-10T18:39:10 IST" duration-ms="9166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLaunchUrl -->
+        <test-method signature="getTitle_odio()[pri:1, instance:Odiobot.LoginTC.LoginTest@3cd3e762]" started-at="2025-06-10T18:39:10 IST" name="getTitle_odio" finished-at="2025-06-10T18:39:10 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle_odio -->
+        <test-method signature="getuserpass_odio()[pri:2, instance:Odiobot.LoginTC.LoginTest@3cd3e762]" started-at="2025-06-10T18:39:10 IST" name="getuserpass_odio" finished-at="2025-06-10T18:39:19 IST" duration-ms="9735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getuserpass_odio -->
+      </class> <!-- Odiobot.LoginTC.LoginTest -->
+    </test> <!-- Login -->
+  </suite> <!-- LoginTC -->
+</testng-results>
