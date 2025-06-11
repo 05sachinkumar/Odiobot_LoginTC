@@ -1,6 +1,7 @@
 package baselibrary;
 
 import java.io.FileInputStream;
+import java.time.Duration;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -17,6 +18,7 @@ public class BaseLibrary implements ExcelUtility{
 		String path = "C:\\Users\\Sachin Kumar\\AutomationOdioTestNG2\\Drivers\\chromedriver.exe";
 		System.setProperty("WebDriver.chrome.driver", path);
 		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();

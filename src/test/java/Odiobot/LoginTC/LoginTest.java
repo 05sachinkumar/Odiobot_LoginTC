@@ -26,4 +26,20 @@ public class LoginTest extends BaseLibrary {
 		obj1.getuserpass();
 		Thread.sleep(3000);	
 	}
+	@Test(priority = 3)
+	public void gethoversidebar() throws InterruptedException
+	{
+		obj1.hoversidebar();
+		Thread.sleep(3000);
+	}
+	@Test(priority = 4)
+	public void wfclick()
+	{
+		obj1.getwfclick();
+	}
+	@Test(priority = 5)
+	public void addwfbtn()
+	{
+		obj1.getaddwfbtn();
+	}
 }

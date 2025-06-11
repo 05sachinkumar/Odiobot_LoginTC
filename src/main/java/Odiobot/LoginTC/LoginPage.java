@@ -1,8 +1,14 @@
 package Odiobot.LoginTC;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import baselibrary.BaseLibrary;
 
@@ -21,6 +27,10 @@ public class LoginPage extends BaseLibrary{
 	private WebElement psswd;
 	@FindBy(xpath="//*[text()='Login']")
 	private WebElement login;
+	  
+	@FindBy(xpath="//*[text()='Workflow']")
+	private WebElement wfclick;
+	
 	
 	public void getTitle()
 	{
@@ -32,6 +42,29 @@ public class LoginPage extends BaseLibrary{
 		username.sendKeys(getReadData(path, 0, 0, 1));
 		psswd.sendKeys(getReadData(path, 0, 1, 1));
 		login.click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
+	}
+	public void hoversidebar()
+	{
+		Actions act = new Actions(driver);
+		  WebElement move = driver.findElement(By.xpath("//*[@class=\"MuiStack-root css-1uk2fxz\"]"));
+		  act.moveToElement(move).build().perform();
+		
+	}
+	public void getwfclick()
+	{
+		wfclick.click();
+		
+	}
+	
+	public void getaddwfbtn()
+	{
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		
+		WebElement myWorkflow = driver.findElement(By.xpath("//*[text()='My Workflows']"));
+		 wait.until(ExpectedConditions.visibilityOf(myWorkflow)).click();
+//		 WebElement BtnAddWorkFlow = driver.findElement(By.xpath("//*[text()='+ Add Workflow']"));
+//		 WebElement element = wait.until(ExpectedConditions.elementToBeClickable(BtnAddWorkFlow));
+//		element.click();
 	}
 }
