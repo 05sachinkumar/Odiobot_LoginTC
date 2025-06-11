@@ -6,6 +6,7 @@
       <class name="Odiobot.LoginTC.LoginTest">
         <methods>
           <include name="getLaunchUrl"/>
+          <include name="getaddwfbtnn1"/>
           <include name="addwfbtn"/>
         </methods>
       </class> <!-- Odiobot.LoginTC.LoginTest -->

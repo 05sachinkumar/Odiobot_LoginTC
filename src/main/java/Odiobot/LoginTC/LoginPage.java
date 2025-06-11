@@ -63,8 +63,16 @@ public class LoginPage extends BaseLibrary{
 		
 		WebElement myWorkflow = driver.findElement(By.xpath("//*[text()='My Workflows']"));
 		 wait.until(ExpectedConditions.visibilityOf(myWorkflow)).click();
-//		 WebElement BtnAddWorkFlow = driver.findElement(By.xpath("//*[text()='+ Add Workflow']"));
-//		 WebElement element = wait.until(ExpectedConditions.elementToBeClickable(BtnAddWorkFlow));
-//		element.click();
+		 WebElement BtnAddWorkFlow = driver.findElement(By.xpath("//*[text()='+ Add Workflow']"));
+		 WebElement element = wait.until(ExpectedConditions.elementToBeClickable(BtnAddWorkFlow));
+		element.click();
+	}
+	public void getaddwfbtn1()
+	{
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		
+		 WebElement BtnAddWorkFlow = driver.findElement(By.xpath("//*[text()='+ Add Workflow']"));
+		 WebElement element = wait.until(ExpectedConditions.elementToBeClickable(BtnAddWorkFlow));
+		element.click();
 	}
 }

@@ -42,4 +42,9 @@ public class LoginTest extends BaseLibrary {
 	{
 		obj1.getaddwfbtn();
 	}
+	@Test(priority = 6)
+	public void getaddwfbtnn1()
+	{
+		obj1.getaddwfbtn1();
+	}
 }
